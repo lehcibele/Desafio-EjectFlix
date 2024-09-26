@@ -75,3 +75,29 @@
 #formulario-cadastro {
     display: none;
 }
+
+.rodade {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 10px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    color: #000000;
+}
+
+.rodape-informacoes {
+    display: flex;
+    gap: 10px;
+}
+
+.icon-rede-social {
+    color: #000000;
+}
+
+.icon-rede-social:hover {
+    color: #FFFFFF;
+}
