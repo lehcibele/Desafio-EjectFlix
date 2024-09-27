@@ -34,9 +34,10 @@
             <form class="formulario">
                 <input type="text" name="nome" id ="nome" placeholder="Insira seu usuário" required>
                 <input type="password" name="senha" id="senha"  placeholder="Insira sua senha" required>
+                <div id="msgErro"></div>
     
-                <button type="submit">Entrar</button>
-                <button type="button">Cadastre-se</button>
+                <button type="submit" id="btn-entrar">Entrar</button>
+                <button type="button" id="btn-cadastrar">Cadastre-se</button>
             </form>
         </section>
 
@@ -52,7 +53,6 @@
                 <input type="password" name="senha" id="nova-senha" placeholder="Insira sua senha" required>
 
             <button type="submit">Entrar</button>
-
             </form>
         </section>
     </main>
@@ -63,7 +63,7 @@
             <a href="" target="_blank"> <i class="bi bi-linkedin icon-rede-social"> </i></a>
             <a href="" target="_blank"> <i class="bi bi-instagram icon-rede-social"> </i></a>
             <a href="" target="_blank"> <i class="bi bi-github icon-rede-social"> </i></a>
-            <p> | </p>
+            <p class="barra-rodape"> | </p>
         </div>
 
         <div class="rodape-informacoes">
@@ -73,5 +73,7 @@
             <a href="https://github.com/lehcibele" target="_blank"> <i class="bi bi-github icon-rede-social"> </i></a>
         </div>
     </footer>
+
+    <script src="assets/js/login_cadastro.js"></script>
 </body>
 </html>

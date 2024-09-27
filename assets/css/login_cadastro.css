@@ -14,7 +14,7 @@
     width: 414px;
     height: 400px;
     margin: 0 auto;
-    background: rgba(88, 88, 88, 0.75);
+    background-color: rgba(88, 88, 88, 0.75);
     border-radius: 10px;
     padding-top: 30px;
     font-family: "Hammersmith One", sans-serif;
@@ -63,13 +63,26 @@
 }
 
 .formulario button[type="submit"] {
-    background: rgba(227, 199, 45, 0.8); 
+    border: none;
+    background-color: rgba(227, 199, 45, 0.8);
 }
 
 .formulario button[type="button"] {
     background: none;
     border: none;
     color: white; 
+    transition: 0.5s;
+}
+
+.formulario button[type="button"]:hover{
+    background-color: rgba(227, 199, 45, 0.8);
+}
+
+#msgErro {
+    width: 350px;
+    margin-left: 30px;
+    background-color: crimson;
+    border-radius: 5px;
 }
 
 #formulario-cadastro {
@@ -100,4 +113,33 @@
 
 .icon-rede-social:hover {
     color: #FFFFFF;
+}
+
+@media (max-width: 550px) {
+    .container-formularios {
+        width: 330px;
+    }
+
+    .formulario input, .formulario button {
+        width: 280px;
+        padding: 0px;
+        margin-left: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rodade {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .barra-rodape {
+        display: none;
+    }
+
+    .rodape-informacoes {
+        margin-top: 15px;
+    }
 }
