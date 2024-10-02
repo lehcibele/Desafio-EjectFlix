@@ -21,7 +21,7 @@ btnEntrar.addEventListener('click', (event) => {
     const validarSenha = "senha123";
 
     if (nome === validarNome && senha === validarSenha) {
-        window.location.href = "index.html";
+        window.location.href = "../../index.html";
     } else {
         msgErro.innerHTML = `Usuário ou senha incorreto! Tente novamente`;
     }

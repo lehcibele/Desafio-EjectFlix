@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filmes</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- Biblioteca de Icons Bootstrap-->
+
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
+
+</head>
+<body class="background-pagina-filmes">
+
+    <header class="cabecalho">
+        <div class="logo-eject-flix">
+            <img src="assets/img/logos/Logo EJECTFLIX.png" alt="Logo EjectFlix">
+        </div>
+
+        <nav class="navbar">
+            <ul class="navbar-menu">
+                <li><a class="menu-link" href="index.html">Inicio</a></li>
+                <li><a class="menu-link" href="assets/pages/categorias.html">Categorias</a></li>
+            </ul>
+        </nav>
+
+        <button class="btn-adicionar-filmes" id="btn-adicionar-filmes">Adicionar Filmes</button>
+
+        <div class="logo-eject">
+            <img src="assets/img/logos/EJECTICONE FUNDO ESCURO 1.png" alt="">
+        </div>
+    </header>
+
+    <main class="container-filmes" id="container-filmes">
+
+        <section class="filme">
+            <img class="filme-imagem" src="assets/img/capas-filmes/harrypotter1.png" alt="Filme Harry Porter">
+
+            <img class="img-open-modal" src="assets/img/icons/ph_plus-fill.png" alt="Icone de abrir o modal">
+
+            <div class="informacoes-filme">
+                <h2 class="titulo-filme">Harry Potter</h2>
+                <p class="categoria-filme">Aventura, Fantasia </p>
+                <p class="ano-filme">2007</p>
+            </div>
+        </section>
+
+        <section class="filme">
+            <img class="filme-imagem" src="assets/img/capas-filmes/harrypotter2.png" alt="Filme Harry Porter">
+
+            <img class="img-open-modal" src="assets/img/icons/ph_plus-fill.png" alt="Icone do modal">
+
+            <div class="informacoes-filme">
+                <h2 class="titulo-filme">Percy Jackson</h2>
+                <p class="categoria-filme">Aventura, Fantasia</p>
+                <p class="ano-filme">2007</p>
+            </div>
+        </section>
+
+        <section class="filme">
+            <img class="filme-imagem" src="assets/img/capas-filmes/harrypotter1.png" alt="Filme Harry Porter">
+
+            <img class="img-open-modal" src="assets/img/icons/ph_plus-fill.png" alt="Icone do modal">
+
+            <div class="informacoes-filme">
+                <h2 class="titulo-filme">Harry Potter</h2>
+                <p class="categoria-filme">Aventura, Fantasia </p>
+                <p class="ano-filme">2007</p>
+            </div>
+        </section>
+
+        <section class="filme">
+            <img class="filme-imagem" src="assets/img/capas-filmes/harrypotter2.png" alt="Filme Harry Porter">
+
+            <img class="img-open-modal" src="assets/img/icons/ph_plus-fill.png" alt="Icone do modal">
+
+            <div class="informacoes-filme">
+                <h2 class="titulo-filme">Percy Jackson</h2>
+                <p class="categoria-filme">Aventura, Fantasia</p>
+                <p class="ano-filme">2007</p>
+            </div>
+
+        </section>
+
+        <section class="filme">
+            <img class="filme-imagem" src="assets/img/capas-filmes/harrypotter1.png" alt="Filme Harry Porter">
+
+            <img class="img-open-modal" src="assets/img/icons/ph_plus-fill.png" alt="Icone do modal">
+
+            <div class="informacoes-filme">
+                <h2 class="titulo-filme">Harry Potter</h2>
+                <p class="categoria-filme">Aventura, Fantasia </p>
+                <p class="ano-filme">2007</p>
+            </div>
+        </section>
+
+        <section class="filme">
+            <img class="filme-imagem" src="assets/img/capas-filmes/harrypotter2.png" alt="Filme Harry Porter">
+
+            <img class="img-open-modal" src="assets/img/icons/ph_plus-fill.png" alt="Icone do modal">
+
+            <div class="informacoes-filme">
+                <h2 class="titulo-filme">Percy Jackson</h2>
+                <p class="categoria-filme">Aventura, Fantasia</p>
+                <p class="ano-filme">2007</p>
+            </div>
+
+        </section>
+
+        <section class="filme">
+            <img class="filme-imagem" src="assets/img/capas-filmes/harrypotter1.png" alt="Filme Harry Porter">
+
+            <img class="img-open-modal" src="assets/img/icons/ph_plus-fill.png" alt="Icone do modal">
+
+            <div class="informacoes-filme">
+                <h2 class="titulo-filme">Harry Potter</h2>
+                <p class="categoria-filme">Aventura, Fantasia </p>
+                <p class="ano-filme">2007</p>
+            </div>
+        </section>
+
+        <section class="filme">
+            <img class="filme-imagem" src="assets/img/capas-filmes/harrypotter2.png" alt="Filme Harry Porter">
+
+            <img class="img-open-modal" src="assets/img/icons/ph_plus-fill.png" alt="Icone do modal">
+
+            <div class="informacoes-filme">
+                <h2 class="titulo-filme">Percy Jackson</h2>
+                <p class="categoria-filme">Aventura, Fantasia</p>
+                <p class="ano-filme">2007</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <div class="modal-adicionar-filme" id="modal-adicionar-filme">
+        <div class="icone-fechar-modal" id="icone-fechar-modal">
+            <i class="bi bi-x-lg"></i>
+        </div>
+
+        <h2 class="titulo-modal">Adicionar Filme à lista:</h2>
+
+        <form class="form-modal-adicionar-filme" id="form-modal-adicionar-filme">
+            <div class="container-form">
+                <div class="form-lado-esquerdo">
+                    <label for="imagem-filme" class="label-img">Endereço da imagem</label>
+                    <input type="url" placeholder="Insira o link da imagem" id="imagem-filme" name="imagem-filme" required>
+
+                    <label for="categoria-filme">Categoria</label>
+                    <input type="text" placeholder="Insira a categoria do filme" id="categoria-filme" name="categoria-filme" required>
+                </div>
+
+                <div class="form-lado-direito">
+                    <label for="titulo-filme">Nome do filme</label>
+                    <input type="text" placeholder="Insira o titulo do filme" id="titulo-filme" name="titulo-filme" required>
+
+                    <label for="ano-filme">Ano de lançamento</label>
+                    <input type="date" placeholder="Insira o ano de lançamento" id="ano-filme" name="ano-filme" required>
+                </div>
+            </div>
+
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+
+    <footer class="rodade">
+        <div class="rodape-informacoes">
+            <p>Feito por Luiza Barbosa</p>
+            <a href="http://www.linkedin.com/in/m-luiza-barbosa" target="_blank"> <i class="bi bi-linkedin icon-rede-social"> </i></a>
+            <a href="https://www.instagram.com/luiza.c.b/" target="_blank"> <i class="bi bi-instagram icon-rede-social"> </i></a>
+            <a href="https://github.com/Luizacb" target="_blank"> <i class="bi bi-github icon-rede-social"> </i></a>
+            <p class="barra-rodape"> | </p>
+        </div>
+
+        <div class="rodape-informacoes">
+            <p>Leticia Cibele</p>
+            <a href="https://www.linkedin.com/in/let%C3%ADcia-cibele-94bb74311/" target="_blank"> <i class="bi bi-linkedin icon-rede-social"> </i></a>
+            <a href="https://www.instagram.com/leh_cibelle/" target="_blank"> <i class="bi bi-instagram icon-rede-social"> </i></a>
+            <a href="https://github.com/lehcibele" target="_blank"> <i class="bi bi-github icon-rede-social"> </i></a>
+        </div>
+    </footer>
+
+    <script src="assets/js/modal-adicionar-filmes.js"></script>
+    
+</body>
+</html>

@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
 
 .container-background {
-    background-color: cadetblue;
+    background-image: url("../img/background/download\ 1.png"), linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.76));
+    background-blend-mode: multiply;
+    background-size: darken;
     box-sizing: border-box;
 }
 
@@ -44,7 +46,7 @@
     background: rgba(192, 192, 192, 0.8);
     border: 1px solid #BAB7B7;
     border-radius: 5px;
-    font-family: 'Hammersmith One';
+    font-family: "Hammersmith One", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -53,7 +55,7 @@
 }
 
 .formulario input::placeholder {
-    font-family: 'Hammersmith One';
+    font-family: "Hammersmith One", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -90,6 +92,8 @@
 }
 
 .rodade {
+    background-color: #010104;
+    height: 80px;
     display: flex;
     justify-content: center;
     margin-top: 30px;
@@ -99,20 +103,22 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 16px;
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .rodape-informacoes {
     display: flex;
     gap: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon-rede-social {
-    color: #000000;
+    color: #FFFFFF;
 }
 
 .icon-rede-social:hover {
-    color: #FFFFFF;
+    color: rgba(227, 199, 45, 0.8);
 }
 
 @media (max-width: 550px) {

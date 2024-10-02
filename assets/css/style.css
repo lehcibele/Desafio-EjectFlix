@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+.background-pagina-filmes {
+    background: #1B1B1B;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    gap: 150px;
+}
+
+.navbar-menu {
+    display: flex;
+    gap: 130px;
+}
+
+.menu-link{
+    font-family: "Hammersmith One", sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.menu-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(227, 199, 45, 0.8);
+    transition: width 0.3s ease-out; 
+}
+
+.menu-link:hover::after {
+    width: 100%;
+}
+
+.btn-adicionar-filmes {
+    width: 147px;
+    height: 34px;
+    padding: 0;
+    margin: 0;
+    background: none;
+    border: 1px solid rgba(227, 199, 45, 0.8);
+    border-radius: 5px;
+    font-family: "Hammersmith One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.btn-adicionar-filmes:hover {
+    transition: 0.3s;
+    background-color: rgba(227, 199, 45, 0.8);
+}
+
+.container-filmes {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.filme {
+    width: 257px;
+    height: 349px;
+    position: relative;
+}
+
+.filme .filme-imagem {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    opacity: 0.9;
+}
+
+.img-open-modal {
+    position: absolute;
+    right: 11px;
+    top: 5px;
+}
+
+.informacoes-filme {
+    position: absolute;
+    top: 226px;
+    width: 257px;
+    height: 123px;
+    color: #FFFFFF;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: "Hammersmith One", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+.titulo-filme {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.categoria-filme {
+    font-size: 13px;
+    line-height: 12px;
+}
+
+.ano-filme {
+    font-size: 12px;
+    line-height: 12px;
+}
+
+.rodade {
+    background-color: #010104;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    margin-top: 73px;
+    gap: 10px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.rodape-informacoes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-rede-social {
+    color: #FFFFFF;
+}
+
+.icon-rede-social:hover {
+    color: rgba(227, 199, 45, 0.8);
+}

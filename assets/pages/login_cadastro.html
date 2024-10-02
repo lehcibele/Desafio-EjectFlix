@@ -5,19 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Cadastro - EjectFlix</title>
 
-    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> <!-- Biblioteca de Icons Bootstrap-->
 
-    <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/login_cadastro.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/login_cadastro.css">
 </head>
-
 
 <body class="container-background">
     <header>
         <div class="logo-eject-flix">
-            <img src="assets/img/logos/Logo EJECTFLIX.png" alt="Logo EjectFlix">
+            <img src="../img/logos/Logo EJECTFLIX.png" alt="Logo EjectFlix">
         </div>
     </header>
 
@@ -31,7 +30,7 @@
             <h3 class="subtitulo">Entrar</h3>
     
             <!-- Formulário de Login -->
-            <form class="formulario">
+            <form class="formulario" method="post" id="login-form">
                 <input type="text" name="nome" id ="nome" placeholder="Insira seu usuário" required>
                 <input type="password" name="senha" id="senha"  placeholder="Insira sua senha" required>
                 <div id="msgErro"></div>
@@ -48,7 +47,7 @@
 
             <h3 class="subtitulo">Cadastre-se</h3>
             <!-- Formulário de Cadastro -->
-            <form class="formulario">
+            <form class="formulario" id="cadastro-form">
                 <input type="text" name="nome" id="novo-nome" placeholder="Insira seu usuário" required>
                 <input type="password" name="senha" id="nova-senha" placeholder="Insira sua senha" required>
 
@@ -60,9 +59,9 @@
     <footer class="rodade">
         <div class="rodape-informacoes">
             <p>Feito por Luiza Barbosa</p>
-            <a href="" target="_blank"> <i class="bi bi-linkedin icon-rede-social"> </i></a>
-            <a href="" target="_blank"> <i class="bi bi-instagram icon-rede-social"> </i></a>
-            <a href="" target="_blank"> <i class="bi bi-github icon-rede-social"> </i></a>
+            <a href="http://www.linkedin.com/in/m-luiza-barbosa" target="_blank"> <i class="bi bi-linkedin icon-rede-social"> </i></a>
+            <a href="https://www.instagram.com/luiza.c.b/" target="_blank"> <i class="bi bi-instagram icon-rede-social"> </i></a>
+            <a href="https://github.com/Luizacb" target="_blank"> <i class="bi bi-github icon-rede-social"> </i></a>
             <p class="barra-rodape"> | </p>
         </div>
 
@@ -74,6 +73,6 @@
         </div>
     </footer>
 
-    <script src="assets/js/login_cadastro.js"></script>
+    <script src="../js/login_cadastro.js"></script>
 </body>
 </html>
