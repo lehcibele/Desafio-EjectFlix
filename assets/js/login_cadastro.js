@@ -19,8 +19,8 @@ btnLogar.addEventListener('click', (event) => {
     const senha = document.getElementById('password-login').value;
     const msgErro = document.getElementById('msgErro');
 
-    const validarNome = "leticia";
-    const validarSenha = "senha123";
+    const validarNome = "admin";
+    const validarSenha = "admin";
 
     if (nome === validarNome && senha === validarSenha) {
         window.location.href = "../../index.html";
