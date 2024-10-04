@@ -23,35 +23,35 @@
     <main class="container-formularios">
 
         <!-- Seção formulario de login --> 
-        <section class="secao-formulario" id="formulario-login">
+        <section class="secao-formulario" id="secao-login">
 
             <h2 class="titulo">Bem-vindo (a) à EJECTFLIX</h2>
 
             <h3 class="subtitulo">Entrar</h3>
     
             <!-- Formulário de Login -->
-            <form class="formulario" method="post" id="login-form">
-                <input type="text" name="nome" id ="nome" placeholder="Insira seu usuário" required>
-                <input type="password" name="senha" id="senha"  placeholder="Insira sua senha" required>
+            <form class="formulario" id="login-form">
+                <input type="text" name="nome" id="username-login" placeholder="Insira seu usuário" required>
+                <input type="password" name="senha" id="password-login"  placeholder="Insira sua senha" required>
                 <div id="msgErro"></div>
     
-                <button type="submit" id="btn-entrar">Entrar</button>
-                <button type="button" id="btn-cadastrar">Cadastre-se</button>
+                <button type="submit" id="btn-logar">Entrar</button>
+                <button type="button" id="btn-para-cadastrar">Cadastre-se</button>
             </form>
         </section>
 
         <!-- Seção formulario de cadastro --> 
-        <section class="secao-formulario" id="formulario-cadastro">
+        <section class="secao-formulario" id="secao-cadastro">
 
             <h2 class="titulo">Bem-vindo (a) à EJECTFLIX</h2>
 
             <h3 class="subtitulo">Cadastre-se</h3>
             <!-- Formulário de Cadastro -->
             <form class="formulario" id="cadastro-form">
-                <input type="text" name="nome" id="novo-nome" placeholder="Insira seu usuário" required>
-                <input type="password" name="senha" id="nova-senha" placeholder="Insira sua senha" required>
+                <input type="text" name="username" id="username-cadastro" placeholder="Insira seu usuário" required>
+                <input type="password" name="password" id="password-cadastro" placeholder="Insira sua senha" required>
 
-            <button type="submit">Entrar</button>
+            <button type="submit" id="btn-cadastrar">Cadastre-se</button>
             </form>
         </section>
     </main>
@@ -73,6 +73,6 @@
         </div>
     </footer>
 
-    <script src="../js/login_cadastro.js"></script>
+        <script src="../js/login_cadastro.js"></script>
 </body>
 </html>
